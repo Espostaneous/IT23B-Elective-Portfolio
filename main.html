@@ -6,6 +6,59 @@
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
+<script>
+
+var words = ['Hi i like HTML', 'I also like css', 'Lorem ipsum dolor sit amet', ' consectetur adipiscing elit', 'sed do eiusmod tempor incididunt'],
+    part,
+    i = 0,
+    offset = 0,
+    len = words.length,
+    forwards = true,
+    skip_count = 0,
+    skip_delay = 15,
+    speed = 70;
+var wordflick = function () {
+  setInterval(function () {
+    if (forwards) {
+      if (offset >= words[i].length) {
+        ++skip_count;
+        if (skip_count == skip_delay) {
+          forwards = false;
+          skip_count = 0;
+        }
+      }
+    }
+    else {
+      if (offset == 0) {
+        forwards = true;
+        i++;
+        offset = 0;
+        if (i >= len) {
+          i = 0;
+        }
+      }
+    }
+    part = words[i].substr(0, offset);
+    if (skip_count == 0) {
+      if (forwards) {
+        offset++;
+      }
+      else {
+        offset--;
+      }
+    }
+    $('.word').text(part);
+  },speed);
+};
+
+$(document).ready(function () {
+  wordflick();
+});
+
+
+</script>
+
 <body>
 
         <div class= 'container'>
@@ -14,11 +67,10 @@
             <div class="shape1 floating"></div>
             <div class="shape2"></div>
         <div class="container_content_inner">
-            
         <div class="title">
             
   
-<h1 style="position: absolute;top: 50px;">Welcome to our Homepage</h1><br><br>
+<h1 style="position: absolute;top: 50px;" >Welcome to our Homepage</h1>
 <p style="position: absolute;top: 110px;margin-right: 800px;">We're thrilled to have you here! At our Portfolio.
                                          Whether you're here to explore, discover valuable information, 
                                          or connect with us, we strive to provide an enriching experience for you.

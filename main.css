@@ -3,6 +3,16 @@ ul {
     margin: 0;
     padding: 0;
   }
+
+  .word {
+    color: rgb(148, 137, 137);
+    font: 50 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
 /*for shapes*/
 
 .shape1{
@@ -20,6 +30,7 @@ ul {
   height: 100px;
   background-color: rgba(255, 255, 255, 0.308);
   top: 550px;
+  
 }
 
 .floating {  
@@ -43,19 +54,20 @@ ul {
     width: 500px;
     position: absolute;
     height: 600px;
-    left: 650px;
+    left: 690px;
     animation: pop .8s ease forwards;
     background-size: cover;
     transition: 1s ease-in-out;
     background-image: url(https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.18169-9/29511572_1845024622196728_6868667116339363704_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=be3454&_nc_eui2=AeFhsSvMG4FGmbwX3ypacyP0nCmxYIntptmcKbFgie2m2S4H9zW_2YvGYtiHcJ3Y7BAggTjWjpvAmbbekC5dbjEP&_nc_ohc=mZkZpp2j5IoAX9uaC13&_nc_ht=scontent.fmnl9-1.fna&cb_e2o_trans=q&oh=00_AfD7ni81m3AeBXsy7XfVjoU7Qm6S9SEc2FVHw9orsO23Qw&oe=659EB5DC);
-    
+    box-shadow: 0 0 5px 3px magenta;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
 }
 .image2{
   border: 2px; 
     width: 500px;
     height: 600px;
    position: absolute;
-   left: 650px;
+   left: 690px;
     opacity: .3;
     animation: pop .8s ease forwards;
     background-size: cover;
@@ -196,6 +208,7 @@ body{
     line-height: 28px;
     transform: translateY(300px);
     animation: slideUp .8s ease-in-out forwards .8s;
+    margin-top: 10px;
   }
   
   .btns {
@@ -226,7 +239,7 @@ body{
   }
   
   h1 {
-      font-size: 44px;
+      font-size: 43px;
       color: var(--contrast-color);
       margin-bottom: 20px;
       transform: translateY(100px);
