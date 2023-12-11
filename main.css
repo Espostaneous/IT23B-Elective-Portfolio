@@ -11,8 +11,15 @@ ul {
   position: absolute;
   background-color: #bf307fa9;
   box-shadow: 5px 10px #bf307f4d;
-  top: 365px;
+  top: 320px;
   left: 10px;
+}
+.shape2{
+  position: absolute;
+  width: 1350px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.308);
+  top: 550px;
 }
 
 .floating {  
@@ -33,19 +40,36 @@ ul {
 /*for images*/
 .image{
     border: 2px; 
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    background-color: magenta;
-    margin-left: 200px;
-    margin-top: -200px;
-    opacity: .5;
+    width: 500px;
+    position: absolute;
+    height: 600px;
+    left: 650px;
     animation: pop .8s ease forwards;
-    background-image: url(https://i.pinimg.com/originals/69/40/8e/69408eb16f7410df4f22e8cbc0f20383.gif);
     background-size: cover;
-    transition: 1s ease;
+    transition: 1s ease-in-out;
+    background-image: url(https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.18169-9/29511572_1845024622196728_6868667116339363704_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=be3454&_nc_eui2=AeFhsSvMG4FGmbwX3ypacyP0nCmxYIntptmcKbFgie2m2S4H9zW_2YvGYtiHcJ3Y7BAggTjWjpvAmbbekC5dbjEP&_nc_ohc=mZkZpp2j5IoAX9uaC13&_nc_ht=scontent.fmnl9-1.fna&cb_e2o_trans=q&oh=00_AfD7ni81m3AeBXsy7XfVjoU7Qm6S9SEc2FVHw9orsO23Qw&oe=659EB5DC);
     
 }
+.image2{
+  border: 2px; 
+    width: 500px;
+    height: 600px;
+   position: absolute;
+   left: 650px;
+    opacity: .3;
+    animation: pop .8s ease forwards;
+    background-size: cover;
+    transition: 1s ease-in-out;
+    background-image: url(https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.18169-9/29511572_1845024622196728_6868667116339363704_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=be3454&_nc_eui2=AeFhsSvMG4FGmbwX3ypacyP0nCmxYIntptmcKbFgie2m2S4H9zW_2YvGYtiHcJ3Y7BAggTjWjpvAmbbekC5dbjEP&_nc_ohc=mZkZpp2j5IoAX9uaC13&_nc_ht=scontent.fmnl9-1.fna&cb_e2o_trans=q&oh=00_AfD7ni81m3AeBXsy7XfVjoU7Qm6S9SEc2FVHw9orsO23Qw&oe=659EB5DC);
+    box-shadow: 0px 0px 10px 0px rebeccapurple;
+}
+.image:hover{
+  transition: 1s ease;
+  background-image: url(https://scontent.fcgy1-1.fna.fbcdn.net/v/t39.30808-6/395239568_1005886147134822_7676175120820168708_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9c7eae&_nc_eui2=AeE8NTGvRTktjdFfYDej3NeErI_JqtEeNCWsj8mq0R40Jd9Ng5n8uvSIeHncvmRhNNTl_4GqP36eYy4B-RdcyQC8&_nc_ohc=e-ns135_X9wAX-IXlmy&_nc_ht=scontent.fcgy1-1.fna&cb_e2o_trans=q&oh=00_AfAWAmgQ-qWH_9D201gPVYGNcCbb3vl77HrNXnGTJESbjQ&oe=657CF064);
+   margin-left: 50px;
+   box-shadow: 0px 0px 10px 0px rebeccapurple;
+}
+
 @keyframes pop {
     0% {
       transform: translateX(1500px);
@@ -202,7 +226,7 @@ body{
   }
   
   h1 {
-      font-size: 40px;
+      font-size: 44px;
       color: var(--contrast-color);
       margin-bottom: 20px;
       transform: translateY(100px);
