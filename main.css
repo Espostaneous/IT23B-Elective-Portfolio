@@ -3,6 +3,33 @@ ul {
     margin: 0;
     padding: 0;
   }
+/*for shapes*/
+
+.shape1{
+  width: 530px;
+  height: 100px;
+  position: absolute;
+  background-color: #bf307fa9;
+  box-shadow: 5px 10px #bf307f4d;
+  top: 365px;
+  left: 10px;
+}
+
+.floating {  
+  animation-name: floating;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% { transform: translate(3,  0px); }
+  50%  { transform: translate(0, 5px); }
+  100%   { transform: translate(-3, -0px); }    
+}
+
 /*for images*/
 .image{
     border: 2px; 
