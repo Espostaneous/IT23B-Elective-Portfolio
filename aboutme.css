@@ -4,6 +4,13 @@
   width: 200px;
   height: 300px;
   background-color: #36395abd;
+  position:absolute;
+  transition: 0.5s ease-in-out;
+  left: 1000px;
+}
+.shape1:hover{
+  width: 30%;
+  left: 700px;
 }
 
 .shape2{
@@ -15,7 +22,7 @@
 
 .floating {  
   animation-name: floating;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   margin-left: 30px;
@@ -124,6 +131,7 @@ body{
   
   .container_content {
    width: 50%;
+   align-content: first baseline;
   }
   
   .container_content_inner {
