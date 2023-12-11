@@ -46,6 +46,32 @@
   transform: translateY(2px);
 }
 
+/*for image*/
+.imageLaw{
+
+}
+.imageLloyd{
+
+}
+
+.image{
+    border: 2px; 
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    background-color: magenta;
+    margin-left: -100px;
+    margin-top: -200px;
+    opacity: .5;
+    animation: pop .8s ease forwards;
+    background-image: url(https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.18169-9/29511572_1845024622196728_6868667116339363704_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=be3454&_nc_eui2=AeFhsSvMG4FGmbwX3ypacyP0nCmxYIntptmcKbFgie2m2S4H9zW_2YvGYtiHcJ3Y7BAggTjWjpvAmbbekC5dbjEP&_nc_ohc=mZkZpp2j5IoAX9uaC13&_nc_ht=scontent.fmnl9-1.fna&cb_e2o_trans=q&oh=00_AfD7ni81m3AeBXsy7XfVjoU7Qm6S9SEc2FVHw9orsO23Qw&oe=659EB5DC);
+    background-size: cover;
+    transition: 1s ease;
+
+    opacity: .5;
+}
+
+
 
 /*for body settings*/
 body{
