@@ -1,3 +1,32 @@
+/*for shapes*/
+
+.shape1{
+  width: 200px;
+  height: 300px;
+  background-color: #36395abd;
+}
+
+.shape2{
+  width: 200px;
+  height: 300px;
+  background-color: #36395abd;
+}
+
+
+.floating {  
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 20px); }
+  100%   { transform: translate(0, -0px); }    
+}
 
 /*for button settings*/
 .button-30 {
@@ -39,6 +68,7 @@
 .button-30:hover {
   box-shadow: rgba(226, 223, 233, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   transform: translateY(-2px);
+
 }
 
 .button-30:active {
@@ -47,29 +77,6 @@
 }
 
 /*for image*/
-.imageLaw{
-
-}
-.imageLloyd{
-
-}
-
-.image{
-    border: 2px; 
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    background-color: magenta;
-    margin-left: -100px;
-    margin-top: -200px;
-    opacity: .5;
-    animation: pop .8s ease forwards;
-    background-image: url(https://scontent.fmnl9-1.fna.fbcdn.net/v/t1.18169-9/29511572_1845024622196728_6868667116339363704_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=be3454&_nc_eui2=AeFhsSvMG4FGmbwX3ypacyP0nCmxYIntptmcKbFgie2m2S4H9zW_2YvGYtiHcJ3Y7BAggTjWjpvAmbbekC5dbjEP&_nc_ohc=mZkZpp2j5IoAX9uaC13&_nc_ht=scontent.fmnl9-1.fna&cb_e2o_trans=q&oh=00_AfD7ni81m3AeBXsy7XfVjoU7Qm6S9SEc2FVHw9orsO23Qw&oe=659EB5DC);
-    background-size: cover;
-    transition: 1s ease;
-
-    opacity: .5;
-}
 
 
 
@@ -109,9 +116,11 @@ body{
     animation: expand .8s ease forwards;
     background-color: var(--secondary-color);
     position: relative;
+
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     transition: all .8s ease;
   }
+  
   
   .container_content {
    width: 50%;
@@ -142,28 +151,7 @@ body{
     line-height: 28px;
     transform: translateY(300px);
     animation: slideUp .8s ease-in-out forwards .8s;
-  }
-  
-  .btns {
-    height: 100%;
-    position: relative;
-    width: 150px;
-    overflow: hidden;
-  }
-  
-  .btns_more {
-    background: transparent;
-    border: 1px solid var(--contrast-color);
-    border-radius: 50px;
-    padding: 8px 12px;
-    color: #BF307F;
-    font-size: 16px;
-    text-transform: uppercase;
-    position: relative;
-    margin-top: 15px;
-    outline: none;
-    transform: translateY(50px);
-    animation: slideUp .8s ease-in-out  forwards 1s;
+    margin-left: -500px;
   }
   
   .title {
@@ -190,10 +178,10 @@ body{
   
   @keyframes slideUp {
     0% {
-      transform: translateY(300px);
+      transform: translateY(100px);
     }
     100% {
-      transform: translateY(0px);
+      transform: translateY(200px);
     }
   }
   
