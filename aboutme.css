@@ -2,15 +2,16 @@
 
 .shape1{
   width: 200px;
-  height: 300px;
+  height: 250px;
   background-color: #36395abd;
   position:absolute;
   transition: 0.5s ease-in-out;
-  left: 1000px;
+  left: 0px;
+  top: 80px;
 }
 .shape1:hover{
-  width: 30%;
-  left: 700px;
+  width: 60%;
+  left: 0px;
 }
 
 .shape2{
@@ -19,7 +20,14 @@
   background-color: #36395abd;
 }
 
-
+.shape3{
+  position: absolute;
+  width: 400px;
+  height: 650px;
+  background-color: #e31ef596;
+  left: 900px;
+  top: 0px;
+}
 .floating {  
   animation-name: floating;
   animation-duration: 2s;
@@ -39,13 +47,12 @@
 .button-30 {
   align-items: center;
   appearance: none;
-  background-color: #FCFCFD;
+  background-color: rgba(255, 0, 255, 0.315);
   border-radius: 4px;
   border-width: 0;
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
   box-sizing: border-box;
-  color: #36395A;
-  cursor: pointer;
+  color: #ffffff;
   display: inline-flex;
   font-family: "JetBrains Mono",monospace;
   height: 60px;
