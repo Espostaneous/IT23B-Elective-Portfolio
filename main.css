@@ -196,8 +196,8 @@ body{
   
   p{
     line-height: 28px;
-    transform: translateY(300px);
-    animation: slideUp .8s ease-in-out forwards .8s;
+    transform: translateY(-500px);
+    animation: slideUp 1s ease-in forwards .8s;
     margin-top: 10px;
   }
   
