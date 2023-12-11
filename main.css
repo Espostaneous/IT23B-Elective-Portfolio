@@ -7,8 +7,8 @@ ul {
 .image{
     border: 2px; 
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     background-color: magenta;
     margin-left: 200px;
     margin-top: -200px;
@@ -16,7 +16,16 @@ ul {
     animation: pop .8s ease forwards;
     background-image: url(https://i.pinimg.com/originals/69/40/8e/69408eb16f7410df4f22e8cbc0f20383.gif);
     background-size: cover;
+    transition: 1s ease;
+    
 } 
+.image:hover{
+   width: 300px;
+   height: 300px;
+   box-shadow: 60px -16px teal;
+
+}
+
 
 @keyframes pop {
     0% {
