@@ -10,11 +10,12 @@
   top: 80px;
   color:#36395a ;
   transition: 1s ease;
+  font-size: small;
   
 }
 .shape1:hover{
   width: 60%;
-  left: 0px;
+  left: 10px;
   box-shadow: 0 0 5px 6px rgb(226, 84, 255);
   color: rgb(255, 255, 255);
   text-indent: 10px;
@@ -28,6 +29,26 @@
   width: 200px;
   height: 300px;
   background-color: #36395abd;
+  color:#36395a ;
+  position:absolute;
+  left: 10px;
+  transition: 1s ease;
+  font-size: small;
+  
+}
+.shape2:hover{
+  width: 60%;
+  left: 10px;
+  box-shadow: 0 0 5px 6px rgb(226, 84, 255);
+  color: rgb(255, 255, 255);
+  text-indent: 10px;
+  font-size: large;
+  font-weight: bold;
+  background-color: #36395a;
+  font-size: large;
+  top: 300px;
+  
+
 }
 
 .shape3{
@@ -38,7 +59,7 @@
   background-repeat: no-repeat;
   background-position-y:530px ;
   background-size: 100px;
-  left: 950px;
+  left: 965px;
   top: 0px;
   box-shadow: 0 0 5px 6px magenta;
 }
@@ -50,6 +71,7 @@
   top: 500px;
   left: 0;
   border:3px white;
+  col
 
 }
 .floating {  
