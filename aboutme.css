@@ -6,10 +6,11 @@
   background-color: #36395abd;
   position:absolute;
   transition: 0.5s ease-in-out;
-  left: 0px;
+  left: 10px;
   top: 80px;
   color:#36395a ;
   transition: 1s ease;
+  
 }
 .shape1:hover{
   width: 60%;
